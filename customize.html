@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="customize.css">
+	<link href='https://fonts.googleapis.com/css?family=IM Fell English SC' rel='stylesheet'>
+	<title>Document</title>
+</head>
+<body>
+  
+  <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\MAIN SCREEN///////////////////////////////////////////////////////////////////////////-->
+	<div id="mainScreen">
+	  <div class="col-12 center">
+	    <img src="images/logo.png" id="siteLogo"/>
+	  </div>
+	  <div class="col-12 center">
+	    <h1 class="white">Wich side are you on?</h1>
+	  </div>
+	  <div class="col-12">
+	    <div class="col-6">
+	      <a href="#" onclick="goLeft()">
+				  <img src="images/witch.gif" alt="witch" id="witchImg"/>
+			  </a>
+	    </div>
+	    <div class="col-6 right">
+	      <a href="#" onclick="goRight()">
+				  <img src="https://media.giphy.com/media/Xj5PlWKv5Qgec/giphy.gif" alt="soldier" id="soldierImg"/>
+			  </a>
+	    </div>
+	  </div>
+	</div>
+	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\COVEN SCREEN///////////////////////////////////////////////////////////////////////////-->
+	<div id="witchCustomization">
+		<div class='col-12'>
+			<div class='col-6 center'>
+				<p class="white">Choose your character's name</p> <input type="text"/>
+			</div>
+			<div class='col-6 right'>
+				<button onclick="backLeft()" class="customizeBtn"><img src="images/arrowPointRight.png" class='selectionBtn' alt="back"></button>
+			</div>
+		</div>
+		<div class='col-12'>
+			<div class='col-6'>
+				<button id='previousWitchHair' class="customizeBtn"><img src="images/chevronPointLeft.png" class='selectionBtn' alt="hair"></button>
+			</div>
+			<div class='col-6'>
+				<button id='nextWitchHair' class="customizeBtn"><img src="images/chevronPointRight.png" class='selectionBtn' alt="hair"></button>
+			</div>
+		</div>
+		<div class='col-12'>
+			<div class='col-6'>
+				<button id='previousWitchHairColor' class="customizeBtn"><img src="images/chevronPointLeft.png" class='selectionBtn' alt="hair color"></button>
+			</div>
+			<div class='col-6'>
+				<button href='#' id='nextWitchHairColor' class="customizeBtn"><img src="images/chevronPointRight.png" class='selectionBtn' alt="hair color"></button>
+			</div>
+		</div>
+		<div class='col-12'>
+			<div class='col-6'>
+				<button id='previousWitchBody' class="customizeBtn"><img src="images/chevronPointLeft.png" class='selectionBtn' alt="hair color"></button>
+			</div>
+			<div class='col-6'>
+				<button id='nextWitchBody' class="customizeBtn"><img src="images/chevronPointRight.png" class='selectionBtn' alt="next_hair"></button>
+			</div>
+		</div>
+		<div class='col-12'>
+			<div class='col-6'>
+				<button id='previousWitchSkinColor' class="customizeBtn"><img src="images/chevronPointLeft.png" class='selectionBtn' alt="prev_hair"></button>
+			</div>
+			<div class='col-6'>
+				<button id='nextWitchSkinColor' class="customizeBtn"><img src="images/chevronPointRight.png" class='selectionBtn' alt="next_hair"></button>
+			</div>
+		</div>
+		<div class='col-12 bottom'>
+		  <div class='col-12'>
+		    <div class='col-6 center'>
+				  <button id='turnWitchLeft' class="customizeBtn"><img src="images/chevronPointLeft.png" class='selectionBtn' alt="turn_left"></button>
+				  <button id='turnWitchRight' class="customizeBtn"><img src="images/chevronPointRight.png" class='selectionBtn' alt="turn_right"></button>
+			  </div>
+		  </div>
+		  <div class='col-12 center'>
+		    <button class='playBtn' id='playWitch'>Play</button>
+		  </div>
+		</div>
+	</div>
+	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ORDER SCREEN///////////////////////////////////////////////////////////////////////////-->
+	<div id="soldierCustomization">
+		<div class='col-12'>
+			<div class='col-6'>
+				<button onclick="backRight()" class="customizeBtn"><img src="images/arrowPointLeft.png" class='selectionBtn' alt="back"></button>
+			</div>
+			<div class='col-6 center'>
+				<p class="white">Choose your character's name</p> <input type="text"/>
+			</div>
+		</div>
+		<div class='col-12 right'>
+			<div class='col-6'>
+				<button id='previousSoldierHair' class="customizeBtn"><img src="images/chevronPointLeft.png" class='selectionBtn' alt="hair"></button>
+			</div>
+			<div class='col-6'>
+				<button id='nextSoldierHair' class="customizeBtn"><img src="images/chevronPointRight.png" class='selectionBtn' alt="hair"></button>
+			</div>
+		</div>
+		<div class='col-12 right'>
+			<div class='col-6'>
+				<button id='previousSoldierHairColor' class="customizeBtn"><img src="images/chevronPointLeft.png" class='selectionBtn' alt="hair color"></button>
+			</div>
+			<div class='col-6'>
+				<button id='nextSoldierHairColor' class="customizeBtn"><img src="images/chevronPointRight.png" class='selectionBtn' alt="hair color"></button>
+			</div>
+		</div>
+		<div class='col-12 right'>
+			<div class='col-6'>
+				<button id='previousSoldierBody' class="customizeBtn"><img src="images/chevronPointLeft.png" class='selectionBtn' alt="hair color"></button>
+			</div>
+			<div class='col-6'>
+				<button id='nextSoldierBody' class="customizeBtn"><img src="images/chevronPointRight.png" class='selectionBtn' alt="next_hair"></button>
+			</div>
+		</div>
+		<div class='col-12 right'>
+			<div class='col-6'>
+				<button id='previousSoldierSkinColor' class="customizeBtn"><img src="images/chevronPointLeft.png" class='selectionBtn' alt="prev_hair"></button>
+			</div>
+			<div class='col-6'>
+				<button id='nextSoldierSkinColor' class="customizeBtn"><img src="images/chevronPointRight.png" class='selectionBtn' alt="next_hair"></button>
+			</div>
+		</div>
+		<div class='col-12 bottom'>
+		  <div class='col-12'>
+		    <div class='col-6 center'>
+				  <button id='turnSoldierLeft' class="customizeBtn"><img src="images/chevronPointLeft.png" class='selectionBtn' alt="turn_left"></button>
+				  <button id='turnSoldierRight' class="customizeBtn"><img src="images/chevronPointRight.png" class='selectionBtn' alt="turn_right"></button>
+			  </div>
+		  </div>
+		  <div class='col-12 center'>
+		    <button class='playBtn' id='playSoldier'>Play</button>
+		  </div>
+		</div>
+	</div>
+	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\SCRIPTS///////////////////////////////////////////////////////////////////////////-->
+	
+	<!--script type="text/javascript" src="audios.js"></script-->
+	<script type="text/javascript" src="js/three.min.js"></script>
+	<script type="text/javascript" src="js/Detector.js"></script>
+	<script type="text/javascript" src="js/OrbitControls.js"></script>
+	<script type="text/javascript" src="js/THREEx.KeyboardState.js"></script>
+	<script type="text/javascript" src="js/stats.min.js"></script>
+	<script type="text/javascript" src="js/Projector.js"></script>
+	
+	<script type="text/javascript" src="js/customize.js"></script>
+	<script type="text/javascript" src="js/windowResize.js"></script>
+	<script type="text/javascript" src="js/lights/addAmbientLight.js"></script>
+	<script type="text/javascript" src="js/lights/addPointLight.js"></script>
+	
+	<script type="text/javascript" src="js/geometries/loadWitch.js"></script>
+	<script type="text/javascript" src="js/geometries/loadSoldier.js"></script>
+</body>
+</html>
