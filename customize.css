@@ -173,3 +173,7 @@ input {
   bottom: 1em;
   position: absolute;
 }
+
+.padded {
+	padding: 1em;
+}
