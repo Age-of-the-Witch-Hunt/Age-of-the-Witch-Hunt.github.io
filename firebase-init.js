@@ -23,7 +23,7 @@ firebase.auth().onAuthStateChanged(function (user) {
   } else {
     switch(page) {
       case 1:
-        window.location.replace("signin.html");
+        window.location.replace("https://age-of-the-witch-hunt.github.io/signin.html");
         break;
     }
     //console.log("Usuário offline");
@@ -35,9 +35,9 @@ firebase.auth().onAuthStateChanged(function (user) {
 function testProfile(user) {
   user = firebase.auth().currentUser;
   if (user === null) {
-    location.href='register.html';
+    location.href='https://age-of-the-witch-hunt.github.io/register.html';
   } else {
-    location.href='account.html';
+    location.href='https://age-of-the-witch-hunt.github.io/account.html';
   }
 }
 
@@ -67,7 +67,7 @@ function writeUserData(userId, userEmail) {
   firebase.database().ref('users/' + userId).set({
     username: name
   }).then(function () {
-    window.location.replace("customize.html");
+    window.location.replace("https://age-of-the-witch-hunt.github.io/customize.html");
   })
   .catch(function (error) {
     alert("ERROR: " + error.message);
@@ -79,7 +79,7 @@ function signinUser() {
   var password = document.getElementById("userPassword").value;
 
   firebase.auth().signInWithEmailAndPassword(email, password).then(function () {
-    window.location.replace("account.html");
+    window.location.replace("https://age-of-the-witch-hunt.github.io/account.html");
   })
   .catch(function (error) {
     var errorCode = error.code;
